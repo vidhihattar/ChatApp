@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723484932689",
+    "project_id": "chatappecho",
+    "storage_bucket": "chatappecho.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723484932689:android:ea331fab00344a28b99670",
+        "android_client_info": {
+          "package_name": "com.example.tab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723484932689-35lvfmj5ag2bvqudq05emh55v24o9rf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWXAQAcHyTY7u66pRYb8WsOuG2OIEJqK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723484932689-35lvfmj5ag2bvqudq05emh55v24o9rf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
