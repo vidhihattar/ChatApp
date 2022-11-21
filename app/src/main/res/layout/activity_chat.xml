@@ -1,9 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChatActivity">
+    android:background="@color/dark_gray"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/ChatRecyclerView"
+        android:layout_above="@id/linear"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear">
+
+        <EditText
+            android:id="@+id/entermessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_et_messaage"
+            android:ems="10"
+            android:hint="enter your message"
+            android:textStyle="bold"
+            android:textColorHint="@color/light_gray"
+            android:inputType="textPersonName"
+
+            android:padding="10dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="2dp"
+
+            android:layout_marginRight="4dp"
+            android:layout_weight="0"
+            android:background="@color/dark_gray"
+
+            android:backgroundTint="@color/dark_gray"
+            app:srcCompat="@mipmap/ic_launcher_send_v2"
+
+            />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/toolbar"
+
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="36dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBaseline_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_arrow_1" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/profileIMG"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp"
+                android:src="@drawable/icong"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/backArrow"
+                app:layout_constraintTop_toTopOf="parent"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_marginStart="-5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="14dp"
+                android:text="John Doe"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/profileIMG"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="1dp"
+                android:text="Online"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/profileIMG"
+
+                />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receiver_text"
+        android:text="hello"
+        android:textSize="14dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/rec_message1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receiver_text"
+        android:maxWidth="250dp"
+        android:text="how are you"
+        android:textSize="14dp"
+        android:layout_below="@id/rec_message1"
+        android:id="@+id/rec_message2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receiver_text"
+        android:backgroundTint="@color/light_gray"
+        android:maxWidth="250dp"
+        android:text="hi i am good, what about you"
+        android:textSize="14dp"
+        android:layout_below="@id/rec_message2"
+        android:layout_toRightOf="@id/rec_message2"
+        android:id="@+id/sen_message1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="15dp"
+
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receiver_text"
+        android:backgroundTint="@color/light_gray"
+        android:maxWidth="250dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
+        android:textSize="14dp"
+        android:layout_below="@id/sen_message1"
+        android:layout_toRightOf="@id/rec_message2"
+        android:id="@+id/sen_message2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="15dp"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receiver_text"
+        android:maxWidth="150dp"
+        android:text="eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+        android:textSize="14dp"
+        android:layout_below="@id/sen_message2"
+        android:id="@+id/rec_message3"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+
+        >
+
+    </TextView>
+
+</RelativeLayout>
+<!--    random comment to commit-->
