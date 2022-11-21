@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "723484932689",
-    "project_id": "chatappecho",
-    "storage_bucket": "chatappecho.appspot.com"
+    "project_number": "52481107622",
+    "project_id": "echochatapp-754b3",
+    "storage_bucket": "echochatapp-754b3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:723484932689:android:ea331fab00344a28b99670",
+        "mobilesdk_app_id": "1:52481107622:android:bab5635aad71d701afb667",
         "android_client_info": {
           "package_name": "com.example.tab"
         }
       },
       "oauth_client": [
         {
-          "client_id": "723484932689-35lvfmj5ag2bvqudq05emh55v24o9rf0.apps.googleusercontent.com",
+          "client_id": "52481107622-0ubqsoigrbkjuhmpr4eeqnbdm25f1pu1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAWXAQAcHyTY7u66pRYb8WsOuG2OIEJqK0"
+          "current_key": "AIzaSyCY3ArRNAavAKq8jZ4KKBG1UaT3S5-T4aQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "723484932689-35lvfmj5ag2bvqudq05emh55v24o9rf0.apps.googleusercontent.com",
+              "client_id": "52481107622-0ubqsoigrbkjuhmpr4eeqnbdm25f1pu1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
