@@ -10,13 +10,12 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ChatRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="3dp"
-        android:layout_below="@id/toolbar"
-        android:id="@+id/ChatRecyclerView"
         android:layout_above="@id/linear"
-        >
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="3dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -91,22 +90,22 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/back_arrow_1" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/profileIMG"
                 android:layout_marginStart="120dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="20dp"
                 android:padding="5dp"
-                android:src="@drawable/icong"
-
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/backArrow"
                 app:layout_constraintTop_toTopOf="parent"
-
-
-                />
+                android:src="@drawable/ic_launcher_background"
+                app:civ_border_color="#FF0A62"
+                app:civ_border_width="2dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,6 +117,7 @@
                 android:text="John Doe"
                 android:textSize="14sp"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/profileIMG"
 
@@ -143,105 +143,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.appcompat.widget.Toolbar>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/receiver_text"
-        android:text="hello"
-        android:textSize="14dp"
-        android:layout_below="@id/toolbar"
-        android:id="@+id/rec_message1"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:padding="12dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-
-        >
-
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/receiver_text"
-        android:maxWidth="250dp"
-        android:text="how are you"
-        android:textSize="14dp"
-        android:layout_below="@id/rec_message1"
-        android:id="@+id/rec_message2"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:padding="12dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-
-        >
-
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/receiver_text"
-        android:backgroundTint="@color/light_gray"
-        android:maxWidth="250dp"
-        android:text="hi i am good, what about you"
-        android:textSize="14dp"
-        android:layout_below="@id/rec_message2"
-        android:layout_toRightOf="@id/rec_message2"
-        android:id="@+id/sen_message1"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:padding="12dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="15dp"
-
-        >
-
-    </TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/receiver_text"
-        android:backgroundTint="@color/light_gray"
-        android:maxWidth="250dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
-        android:textSize="14dp"
-        android:layout_below="@id/sen_message1"
-        android:layout_toRightOf="@id/rec_message2"
-        android:id="@+id/sen_message2"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:padding="12dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="15dp"
-
-        >
-
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/receiver_text"
-        android:maxWidth="150dp"
-        android:text="eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
-        android:textSize="14dp"
-        android:layout_below="@id/sen_message2"
-        android:id="@+id/rec_message3"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:padding="12dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-
-        >
-
-    </TextView>
 
 </RelativeLayout>
 <!--    random comment to commit-->

@@ -11,7 +11,9 @@
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_status.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/sample_user_list.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/sample_reciever.xml" value="0.36070559610705594" />
+        <entry key="app/src/main/res/layout/sample_sender.xml" value="0.3029891304347826" />
+        <entry key="app/src/main/res/layout/sample_user_list.xml" value="0.17445678710937496" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.30885416666666665" />
       </map>
     </option>

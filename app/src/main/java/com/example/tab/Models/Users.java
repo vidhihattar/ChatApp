@@ -55,7 +55,7 @@ public class Users {
         this.password = password;
     }
 
-    public String getUserid(String key) {
+    public String getUserid() {
         return userid;
     }
 
@@ -70,4 +70,5 @@ public class Users {
     public void setLastmessage(String lastmessage) {
         this.lastmessage = lastmessage;
     }
+
 }

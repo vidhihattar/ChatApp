@@ -13,18 +13,19 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tablayout"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:elevation="12dp"
             app:tabBackground="@drawable/tablayoutbg"
-            app:tabIndicatorColor="@color/white"
-            app:tabSelectedTextColor="@color/white"
-            app:tabTextColor="@color/white"
-            app:tabMaxWidth="0dp"
             app:tabGravity="fill"
-            app:tabPaddingTop="100dp">
+            app:tabIndicatorColor="@color/white"
+            app:tabMaxWidth="0dp"
+            app:tabPaddingTop="100dp"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white">
 
 
         </com.google.android.material.tabs.TabLayout>

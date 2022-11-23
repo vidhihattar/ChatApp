@@ -1,7 +1,7 @@
 package com.example.tab.Adapters;
 
 import android.content.Context;
-import android.media.Image;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,10 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.tab.ChatActivity;
 import com.example.tab.Models.Users;
 import com.example.tab.R;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -48,6 +47,17 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder>{
         Users users = list.get(position);
         Picasso.get().load(users.getProfilePic()).placeholder(R.drawable.ic_launcher_background).into(holder.image);
         holder.username.setText(users.getUsername());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ChatActivity.class);
+                intent.putExtra("userID", users.getUserid());
+                intent.putExtra("profilePic", users.getProfilePic());
+                intent.putExtra("userName", users.getUsername());
+                context.startActivity(intent);
+            }
+        });
 
     }
 
